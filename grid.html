@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> grid </title>
+    <style>
+        /* 'fr' 이라고 하는 것은 움직이는 화면에 맞춰
+        화면 전체를 쓸 수 있도록 하는 것*/
+        /*can i use 라는 사이트에서 html이나 CSS, JAVASCRIPT에 관해
+        얼마나 많은 사이트들이 채택해서 사용하고 있고, 또 얼마나 많은 사람들이
+        이용하고 있는지 나타내주는 도표를 볼 수 있다.*/
+        div{
+            border:5px solid gray;
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+  </head>
+  <body>
+      <!--style 태그를 지정하기 위해 쓰는 무색무취의 태그 2가지
+         span / div  
+        span은 화면 전체를 쓰는 태그가 아니기 때문에 줄바꿈이 되지 않음
+        div는 화면 전체를 쓰는 태그기 때문에 줄바꿈이 이루어짐
+        필요와 상황에 따라 골라서 쓰면 됨-->
+        <div id="grid"> 
+           <div>NAVIGATION</div>
+           <div>ARTICLE</div>
+        </div>
+  </body>
+</html>
